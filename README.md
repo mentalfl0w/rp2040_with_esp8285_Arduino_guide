@@ -84,7 +84,7 @@ Below table lists file names and their purposes from `ESP8266_AT_LoBo\bin` direc
 + Step 3: Configure the software as shown in the image, especially selecting the correct serial port for your RP-ESP.![Step 3-1](pic/flash_step_3_1.png)
 If manually configuring firmware addresses is too much of a hassle, the repository provides combined packages. There are two versions: `ESP8285_1MB_1.7.4_AT.bin` (official) and `ESP8285_1MB_1.7.4_AT_Lobo` (Lobo firmware). The latter is strongly recommended.
 
-If choosing the integrated package, configure as follows:![Step 3-2](pic/flash_step_3_2.png)
+If choosing the integrated package, configure as follows. If flashing the integrated package doesn't work, please choose to flash it separately (thanks to [@thanhviet228](https://github.com/thanhviet228) for the feedback):![Step 3-2](pic/flash_step_3_2.png)
 + Step 4: Click `START` button, wait for flashing to complete. Disconnect power from RP-ESP, reconnect and open a serial monitor with the correct COM port. Enter `AT` command (ending with `\r\n`), expect `OK`. Input `AT+GMR`, verify system version 1.7.4 in response.
 
 ### 2.3 Using RP-ESP with Arduino IDE
